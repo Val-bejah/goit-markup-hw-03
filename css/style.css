@@ -136,32 +136,23 @@ a {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin: 20px auto;
-
-  /* border:1px solid #000000; */
-  /* box-sizing: border-box; */
-  /* width: 1600px; */
-  /* height: 600px; */
-  /* left: -4px; */
-  /* top: 94px; */
-  /* bottom: 94px; */
+  width: 696px;
 }
 
 .title-button-primary {
+  font-family: 'roboto';
   font-style: normal;
   font-weight: 700px;
   font-size: 16px;
   line-height: 30px;
-  letter-spacing: 0.06em;
-  /* display: flex; */
   align-items: center;
   text-align: center;
   color: var(--primary-white-color);
   background: var(--accent-color);
-
   padding: 10px 32px;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .feature-list {
@@ -173,13 +164,11 @@ a {
   flex-basis: calc((100% - 120px / 4));
 }
 
-.feature .feature-title {
+.feature-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  /* letter-spacing: 0.03em; */
-  /* text-transform: uppercase; */
   color: var(----primary-black-color);
   margin-bottom: 10px;
 }
@@ -213,6 +202,10 @@ img {
   height: auto;
 }
 
+.album {
+  background: #f5f4fa;
+}
+
 .album-list {
   display: flex;
   gap: 30px;
@@ -223,8 +216,10 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.album .album-title {
+.staff {
+  padding: 30px 45px;
+}
+.album-title {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -234,7 +229,7 @@ img {
   margin-bottom: 10px;
 }
 
-.album .album-description {
+.album-description {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -255,6 +250,7 @@ img {
 .footbar {
   background-color: var(--background-dark-color);
   padding: 60px 0px;
+  height: 252px;
 }
 .footbar .logo-footer {
   font-style: normal;
@@ -270,9 +266,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-
-  /* letter-spacing: 0.03em; */
-
   color: var(--primary-white-color);
 }
 .footbar .contact {
@@ -280,8 +273,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
-  /* or 171% */
-  /* letter-spacing: 0.03em; */
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -344,11 +335,13 @@ img {
 
 .portafolio-item {
   flex-basis: calc((100% - 90px) / 3);
-  /* border: 1px solid #EEEEEE; */
+  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.portafolio-staff {
+  padding: 20px 24px;
+}
 .portafolio .current {
   font-weight: 500;
   font-size: 16px;
